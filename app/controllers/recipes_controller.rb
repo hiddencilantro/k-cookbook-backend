@@ -11,7 +11,6 @@ class RecipesController < ApplicationController
 
     def create
         recipe = Recipe.new(recipe_params)
-        recipe.category = Category.last ##temporary workaround
         if recipe.save
             render json: RecipeSerializer.new(recipe)
         else
@@ -37,6 +36,6 @@ class RecipesController < ApplicationController
     private
 
     def recipe_params
-        params.require(:recipe).permit(:name, :description, :image, ingredients: [], instructions: [])
+        params.require(:recipe).permit(:name, :description, :image, :category_id, ingredients: [], instructions: [])
     end
 end
