@@ -1,12 +1,14 @@
 class RecipesController < ApplicationController
+    before_action :set_recipe, only: [:show, :update, :destroy]
+
     def index
         recipes = Recipe.all
+        # What determines the order of returned instances within the collection?
         render json: RecipeSerializer.new(recipes)
     end
 
     def show
-        recipe = Recipe.find_by(id: params[:id])
-        render json: RecipeSerializer.new(recipe)
+        render json: RecipeSerializer.new(@recipe)
     end
 
     def create
@@ -14,26 +16,33 @@ class RecipesController < ApplicationController
         if recipe.save
             render json: RecipeSerializer.new(recipe)
         else
-            render json: {error: "Could not save recipe"}
+            errors = recipe.errors.full_messages.map do |msg|
+                " #{msg}"
+            end
+            render json: {error: errors}
         end
     end
 
     def update
-        recipe = Recipe.find_by(id: params[:id])
-        if recipe.update(recipe_params)
-            render json: RecipeSerializer.new(recipe)
+        if @recipe.update(recipe_params)
+            render json: RecipeSerializer.new(@recipe)
         else
-            render json: {error: "Could not update recipe to the database"}
+            errors = @recipe.errors.full_messages.map do |msg|
+                " #{msg}"
+            end
+            render json: {error: errors}
         end
     end
 
     def destroy
-        recipe = Recipe.find_by(id: params[:id])
-        recipe.destroy
-        render json: {message: "Successfully deleted #{recipe.name}"}
+        @recipe.destroy
     end
 
     private
+
+    def set_recipe
+        @recipe = Recipe.find_by(id: params[:id])
+    end
 
     def recipe_params
         params.require(:recipe).permit(:name, :description, :image, :category_id, ingredients: [], instructions: [])
