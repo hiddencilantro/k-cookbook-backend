@@ -3,7 +3,7 @@ class RecipesController < ApplicationController
 
     def index
         recipes = Recipe.all
-        # What determines the order of returned instances within the collection?
+        # What determines the order of the returned instances within the collection?
         render json: RecipeSerializer.new(recipes)
     end
 
