@@ -15,7 +15,8 @@ bbq = Category.create(name: "Gogi (Meats)")
 
 Recipe.create([
     {
-        name: "Baechu Kimchi (Napa Cabbage Kimchi)",
+        name: "Baechu Kimchi",
+        eng_name: "Napa Cabbage Kimchi",
         description: "The most standard and traditional type of kimchi made with napa cabbage. So common and iconic among Koreans that it's often simply referred to as 'kimchi'.",
         image: "http://gdimg.gmarket.co.kr/1870812749/still/600?ver=1616714406",
         ingredients: [
@@ -58,7 +59,8 @@ Recipe.create([
         category: kimchi
     },
     {
-        name: "Pa-kimchi (Green Onion Kimchi)",
+        name: "Pa-kimchi",
+        eng_name: "Green Onion Kimchi",
         description: "An easy-to-make kimchi that's very aromatic and spicy.",
         image: "https://www.ghostfreshmart.com/wp-content/uploads/2020/04/%ED%8C%8C%EA%B9%80%EC%B9%98.jpg",
         ingredients: [
@@ -87,7 +89,8 @@ Recipe.create([
         category: kimchi
     },
     {
-        name: "KKakdugi (Cubed Radish Kimchi)",
+        name: "KKakdugi",
+        eng_name: "Cubed Radish Kimchi",
         description: "A type of kimchi made from diced radish. It's a very common type of kimchi and banchan (side dish) alongside baechu kimchi (napa cabbage kimchi). Goes particularly well with various gukbap (soup with rice).",
         image: "https://i.ytimg.com/vi/OPo_j3jDMeM/maxresdefault.jpg",
         ingredients: [
@@ -114,7 +117,8 @@ Recipe.create([
         category: kimchi
     },
     {
-        name: "Hobakjuk (Pumpkin Porridge)",
+        name: "Hobakjuk",
+        eng_name: "Pumpkin Porridge",
         description: "A traditional Korean comfort food and a popular snack and/or dessert. Sweet and nutty in flavor and is sometimes also served for breakfast.",
         image: "http://image.auction.co.kr/itemimage/17/9c/a8/179ca8bd61.jpg",
         ingredients: [
@@ -138,7 +142,8 @@ Recipe.create([
         category: porridge
     },
     {
-        name: "Sogogi-yachaejuk (Beef and Vegetable Porridge)",
+        name: "Sogogi-yachaejuk",
+        eng_name: "Beef and Vegetable Porridge",
         description: "A nutritious rice porridge made with cuts of lean beef and vegetables. A warm and hearty meal for any time of the year and easy on the stomach for those with digestive issues.",
         image: "https://www.maangchi.com/wp-content/uploads/2015/02/juk.jpg",
         ingredients: [
@@ -171,7 +176,8 @@ Recipe.create([
         category: porridge
     },
     {
-        name: "Jeonbokjuk (Abalone Porridge)",
+        name: "Jeonbokjuk",
+        eng_name: "Abalone Porridge",
         description: "Referred to as the 'king of porridges' in Korea, Jeonbokjuk is creamy, savory, and delicious. Because they live at the bottom of the ocean, abalones are incredibly lean and full of healthy minerals and vitamins, but can also be quite pricey.",
         image: "https://t1.daumcdn.net/cfile/tistory/23574534590A879921",
         ingredients: [
@@ -202,7 +208,8 @@ Recipe.create([
         category: porridge
     },
     {
-        name: "Haemulpajeon (Seafood Scallion Pancake)",
+        name: "Haemulpajeon",
+        eng_name: "Seafood Scallion Pancake",
         description: "One of the most popular types of Korean pancakes, Haemulpajeon combines seafood with green onions, creating a savory taste that works great as an appetizer or to serve to guests at a housewarming party.",
         image: "https://static.wtable.co.kr/image/production/service/recipe/676/1ecf9cfb-b8eb-48a0-a209-976507a271f5.jpg",
         ingredients: [
@@ -241,7 +248,8 @@ Recipe.create([
         category: pancake
     },
     {
-        name: "Kimchijeon (Kimchi Pancake)",
+        name: "Kimchijeon",
+        eng_name: "Kimchi Pancake",
         description: "Simple yet delicious Korean-style pancakes. Often enjoyed by Koreans on a rainy day with a bottle of rice wine.",
         image: "https://post-phinf.pstatic.net/MjAxOTA2MjZfMjQ2/MDAxNTYxNTE2OTcwNDk3.k9F_ctcO-NR8f5AGc7P2vTILoH9DLMncnxZ7LiNj-PEg.aR5jU4mh3YddnHG5JwRUiFb7UIoNH935HpNzZpg13tgg.JPEG/GettyImages-a10975620.jpg?type=w1200",
         ingredients: [
@@ -267,7 +275,8 @@ Recipe.create([
         category: pancake
     },
     {
-        name: "Buchujeon (Chive Pancake)",
+        name: "Buchujeon",
+        eng_name: "Chive Pancake",
         description: "A Korean style pancake made from garlic chives and usually dipped in a soy-based dipping sauce. Works great as an appetizer or a side dish.",
         image: "https://static.wtable.co.kr/image/production/service/recipe/763/721b77af-5566-49a0-93af-811448005c1c.jpg",
         ingredients: [
@@ -298,7 +307,8 @@ Recipe.create([
         category: pancake
     },
     {
-        name: "Japchae (Stir-fried Glass Noodles)",
+        name: "Japchae",
+        eng_name: "Stir-fried Glass Noodles",
         description: "A well-known and popular dish consisting of mixed vegetables and glass noodles. It is particularly eaten during the festive holidays in Korea. Typically served as a side dish.",
         image: "https://t1.daumcdn.net/cfile/blog/2744924558848FB930",
         ingredients: [
@@ -345,7 +355,8 @@ Recipe.create([
         category: noodle
     },
     {
-        name: "Janchi Guksu (Banquet Noodles)",
+        name: "Janchi Guksu",
+        eng_name: "Banquet Noodles",
         description: "A simple dish consisting of wheat flour noodles in a light anchovy broth. It is historically a special-occasion dish because Koreans traditionally associate long thin noodles with longevity. It can be done with or without a kimchi garnish.",
         image: "https://t1.daumcdn.net/cfile/tistory/215F0F3B590299982C",
         ingredients: [
@@ -381,7 +392,8 @@ Recipe.create([
         category: noodle
     },
     {
-        name: "Bibim Guksu (Spicy Mixed Noodles)",
+        name: "Bibim Guksu",
+        eng_name: "Spicy Mixed Noodles",
         description: "A classic and simple spicy dish made with wheat flour noodles. Great for serving a large number of people with minimal ingredients and preparation time.",
         image: "http://thumbnail.10x10.co.kr/webimage/image/basic600/243/B002431530.jpg?cmd=thumb&w=400&h=400&fit=true&ws=false",
         ingredients: [
@@ -409,7 +421,8 @@ Recipe.create([
         category: noodle
     },
     {
-        name: "Kimchi Jjigae (Kimchi Stew)",
+        name: "Kimchi Jjigae",
+        eng_name: "Kimchi Stew",
         description: "One of the most basic but also the most-loved of all stews in Korean cuisine. Goes extremely well with a bowl of rice.",
         image: "https://ppss.kr/wp-content/uploads/2019/08/0-87.jpg",
         ingredients: [
@@ -447,7 +460,8 @@ Recipe.create([
         category: stew
     },
     {
-        name: "Dwenjang Jjigae (Soybean Paste Stew)",
+        name: "Dwenjang Jjigae",
+        eng_name: "Soybean Paste Stew",
         description: "Possibly one of the most iconic stews in Korea that's as popular as Kimchi Stew. Dwenjang, alongside Gochujang (Chili Paste), is another broadly applied ingredient in Korean cuisine.",
         image: "https://freshleader.co.kr/data/item/5c4_5030_0004/thumb-5c4_1_450x520.jpg",
         ingredients: [
@@ -476,7 +490,8 @@ Recipe.create([
         category: stew
     },
     {
-        name: "Budae Jjigae (Military Base Stew)",
+        name: "Budae Jjigae",
+        eng_name: "Military Base Stew",
         description: "A spicy and savory Korean-American fusion, made from mixing classic Korean flavors like kimchi and gochujang (Korean chili paste) with American canned foods like Spam, baked beans, and sausages. The dish originated after the Korean War when ingredients from the American military bases found its way to the surrounding areas where creative Koreans decided to add them to their stew.",
         image: "https://w.namu.la/s/e002fb48010d71a876eef84227246ad660d89c93a791f50246f52c32625f1e94cc9458fcf1599bcf33e2ed261c669c3817b07175de1cbc19d8982632bdc3f894889ae9d7ef43aed57e5ea9a2f1270e5f96a2203766877da0e65db03848fb5123",
         ingredients: [
@@ -522,7 +537,8 @@ Recipe.create([
         category: stew
     },
     {
-        name: "Bulgogi (Marinated Beef BBQ)",
+        name: "Bulgogi",
+        eng_name: "Marinated Beef BBQ",
         description: "A classic loved by many around the world. Its sweet and savory marinade is the key to its popularity.",
         image: "https://s3.ap-northeast-2.amazonaws.com/meesig/v3/prod/image/item/main/288/a12f1ee3aea649c1b72c11d8c9cf880e20170515202929",
         ingredients: [
@@ -547,7 +563,8 @@ Recipe.create([
         category: bbq
     },
     {
-        name: "Jeyook Bokkeum (Stir-fry Spicy Pork)",
+        name: "Jeyook Bokkeum",
+        eng_name: "Stir-fry Spicy Pork",
         description: "A simple and quick spicy dish made from stir-fried pork and vegetables. Commonly served over rice.",
         image: "https://www.ghostfreshmart.com/wp-content/uploads/2020/04/%EC%A0%9C%EC%9C%A1%EB%B3%B6%EC%9D%8C-1.jpg",
         ingredients: [
@@ -585,7 +602,8 @@ Recipe.create([
         category: bbq
     },
     {
-        name: "Cheese Buldak (Spicy Chicken with Cheese)",
+        name: "Cheese Buldak",
+        eng_name: "Spicy Chicken with Cheese",
         description: "A super-spicy chicken barbecue entree, often sold as street food but also as anju (Korean-style bar food). 'Bul' means fire and 'dak' is chicken, which makes the literal translation of this dish 'Fire Chicken'.",
         image: "https://i.ytimg.com/vi/hmGrE2KlkIM/maxresdefault.jpg",
         ingredients: [
@@ -616,7 +634,8 @@ Recipe.create([
         category: bbq
     },
     {
-        name: "Tteokgalbi (Sweet Beef Patties)",
+        name: "Tteokgalbi",
+        eng_name: "Sweet Beef Patties",
         description: "A delicious dish made of minced and marinated beef served with a sweet and savory sauce. It is often grilled or barbecued over charcoal and its tenderness makes it a popular menu not only for adults but also among kids.",
         image: "https://www.dailysecu.com/news/photo/201909/68136_62577_5930.jpg",
         ingredients: [
@@ -649,7 +668,8 @@ Recipe.create([
         category: bbq
     },
     {
-        name: "Galbi-jjim (Braised Beef Short Ribs)",
+        name: "Galbi-jjim",
+        eng_name: "Braised Beef Short Ribs",
         description: "A popular dish that's often prepared for festivities such as Chuseok (Korean Thanksgiving), Seollal (New Year's Day), and birthdays, but certainly not limited to such special occasions.",
         image: "https://recipe1.ezmember.co.kr/cache/recipe/2016/01/31/5240d19f3477433a28138af269ed26d71.jpg",
         ingredients: [
@@ -694,6 +714,7 @@ Recipe.create([
     }
     # {
     #     name: "",
+    #     eng_name: "",
     #     description: "",
     #     image: "",
     #     ingredients: [
