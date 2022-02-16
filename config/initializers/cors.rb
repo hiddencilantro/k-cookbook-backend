@@ -14,6 +14,9 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
       methods: [:get]
     resource '/recipes',
       headers: :any,
-      methods: [:post, :patch, :delete]
+      methods: [:post]
+    resource '/recipes/*',
+      headers: :any,
+      methods: [:patch, :delete]
   end
 end
