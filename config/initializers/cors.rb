@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://k-ookbook.netlify.app'
+    origins 'https://k-ookbook-wiki.netlify.app'
 
     resource '/categories',
       headers: :any,
